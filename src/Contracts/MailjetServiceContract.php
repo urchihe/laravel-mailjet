@@ -1,14 +1,14 @@
 <?php
 
-namespace Admin\Mailjet\Contracts;
+namespace Urchihe\LaravelMailjet\Contracts;
 
-use Admin\Mailjet\Model\Campaign;
-use Admin\Mailjet\Model\CampaignDraft;
-use Admin\Mailjet\Model\ContactMetadata;
-use Admin\Mailjet\Model\Contact;
-use Admin\Mailjet\Model\ContactsList;
-use Admin\Mailjet\Model\EventCallbackUrl;
-use Admin\Mailjet\Model\Template;
+use Urchihe\LaravelMailjet\Model\Campaign;
+use Urchihe\LaravelMailjet\Model\CampaignDraft;
+use Urchihe\LaravelMailjet\Model\ContactMetadata;
+use Urchihe\LaravelMailjet\Model\Contact;
+use Urchihe\LaravelMailjet\Model\ContactsList;
+use Urchihe\LaravelMailjet\Model\EventCallbackUrl;
+use Urchihe\LaravelMailjet\Model\Template;
 
 interface MailjetServiceContract
 {

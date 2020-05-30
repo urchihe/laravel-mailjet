@@ -1,6 +1,6 @@
 <?php
 
-namespace Admin\Mailjet\Exception;
+namespace Urchihe\LaravelMailjet\Exception;
 
 use Exception;
 use \Mailjet\Response;

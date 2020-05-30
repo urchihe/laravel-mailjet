@@ -1,5 +1,5 @@
 <?php
-namespace Admin\Mailjet\Model;
+namespace Urchihe\LaravelMailjet\Model;
 
 /**
  * Description of Template

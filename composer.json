@@ -1,15 +1,18 @@
 {
-    "name": "admin/mailjet",
+    "repositories": [{
+        "type": "composer",
+        "url": "https://packagist.org"
+    }],
+    "name": "urchihe/laravel-mailjet",
     "description": "mailjet packages with wrapper",
-    "version": "1.1.0",
-    "type": "library",
+    "keywords": ["laravel", "mailjet"],
+    "license": "MIT",
     "authors": [
         {
             "name": "uchennaihe",
             "email": "urchihe@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.4.0",
         "laravel/framework": "^7.0",
@@ -26,17 +29,17 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Admin\\Mailjet\\MailjetServiceProvider",
-                "Admin\\Mailjet\\MailjetMailServiceProvider"
+                "Urchihe\\LaravelMailjet\\MailjetServiceProvider",
+                "Urchihe\\LaravelMailjet\\MailjetMailServiceProvider"
             ],
             "aliases": {
-                "Mailjet": "Admin\\Mailjet\\Facades\\Mailjet"
+                "Mailjet": "Urchihe\\LaravelMailjet\\Mailjet"
             }
         }
     },
     "autoload": {
         "psr-4": {
-            "Admin\\Mailjet\\": "src/"
+            "Urchihe\\LaraveMailjet\\": "src/"
         }
     }
 }

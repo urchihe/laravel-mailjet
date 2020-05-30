@@ -1,6 +1,6 @@
 <?php
 
-namespace Admin\Mailjet\Facades;
+namespace Urchihe\LaravelMailjet\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Admin\Mailjet\Transport;
+namespace Urchihe\LaravelMailjet\Transport;
 
 use \Swift_Events_EventDispatcher;
 use \Swift_Events_EventListener;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Admin\Mailjet;
+namespace Urchihe\LaravelMailjet;
 
 use Illuminate\Support\ServiceProvider;
-use Admin\Mailjet\Services\MailjetService;
+use Urchihe\LaravelMailjet\Services\MailjetService;
 
 class MailjetServiceProvider extends ServiceProvider
 {

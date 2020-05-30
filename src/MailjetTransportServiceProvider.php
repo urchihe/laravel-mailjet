@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Admin\Mailjet;
+namespace Urchihe\LaravelMailjet;
 
 
-use Admin\Mailjet\Transport\MailjetTransport;
+use Urchihe\LaravelMailjet\Transport\MailjetTransport;
 use Illuminate\Mail\MailManager;
 use Illuminate\Support\ServiceProvider;
 use Swift_Events_SimpleEventDispatcher;

@@ -1,5 +1,5 @@
 <?php
-namespace Admin\Mailjet\Model;
+namespace Urchihe\LaravelMailjet\Model;
 
 /**
 * https://dev.mailjet.com/email-api/v3/eventcallbackurl/

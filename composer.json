@@ -1,0 +1,42 @@
+{
+    "name": "admin/mailjet",
+    "description": "mailjet packages with wrapper",
+    "version": "1.1.0",
+    "type": "library",
+    "authors": [
+        {
+            "name": "uchennaihe",
+            "email": "urchihe@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "laravel/framework": "^7.0",
+        "laravel/tinker": "^2.0",
+        "mailjet/mailjet-apiv3-php": "^1.4",
+        "mailjet/mailjet-swiftmailer": "^2.0"
+    },
+    "require-dev": {
+        "fzaninotto/faker": "^1.9.1",
+        "mockery/mockery": "^1.3.1",
+        "nunomaduro/collision": "^4.1",
+        "phpunit/phpunit": "^8.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Admin\\Mailjet\\MailjetServiceProvider",
+                "Admin\\Mailjet\\MailjetMailServiceProvider"
+            ],
+            "aliases": {
+                "Mailjet": "Admin\\Mailjet\\Facades\\Mailjet"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Admin\\Mailjet\\": "src/"
+        }
+    }
+}

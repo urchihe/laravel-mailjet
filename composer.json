@@ -33,13 +33,13 @@
                 "Urchihe\\LaravelMailjet\\MailjetMailServiceProvider"
             ],
             "aliases": {
-                "Mailjet": "Urchihe\\LaravelMailjet\\Mailjet"
+                "Mailjet": "Urchihe\\LaravelMailjet\\Faceds\\Mailjet"
             }
         }
     },
     "autoload": {
         "psr-4": {
-            "Urchihe\\LaraveMailjet\\": "src/"
+            "Urchihe\\LaravelMailjet\\": "src/"
         }
     }
 }

@@ -3,3 +3,4 @@ build
 .phpintel
 .idea
 composer.lock
+.phpunit.result.cache

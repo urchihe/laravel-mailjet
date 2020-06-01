@@ -1,36 +1,43 @@
 <?php
 
-namespace Mailjet\LaravelMailjet\Tests\Services;
 
-use Mockery\Container;
-use Orchestra\Testbench\TestCase;
-
-class MailjetServiceTest extends TestCase
+class MailjetServiceTest extends \Orchestra\Testbench\TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         parent::setUp();
     }
 
+
     public function testFacade()
     {
-        $this->assertTrue(method_exists($this->app['Mailjet'], 'get'));
-        $this->assertTrue(method_exists($this->app['Mailjet'], 'post'));
-        $this->assertTrue(method_exists($this->app['Mailjet'], 'put'));
-        $this->assertTrue(method_exists($this->app['Mailjet'], 'delete'));
-        $this->assertTrue(method_exists($this->app['Mailjet'], 'getAllLists'));
-        $this->assertTrue(method_exists($this->app['Mailjet'], 'createList'));
-        $this->assertTrue(method_exists($this->app['Mailjet'], 'getListRecipients'));
-        $this->assertTrue(method_exists($this->app['Mailjet'], 'getSingleContact'));
-        $this->assertTrue(method_exists($this->app['Mailjet'], 'createContact'));
-        $this->assertTrue(method_exists($this->app['Mailjet'], 'createListRecipient'));
-        $this->assertTrue(method_exists($this->app['Mailjet'], 'editListrecipient'));
-        $this->assertTrue(method_exists($this->app['Mailjet'], 'getClient'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'get'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'post'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'put'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'delete'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'getAllLists'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'createList'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'getListRecipients'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'getSingleContact'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'createContact'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'createListRecipient'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'editListRecipient'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'getClient'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'getAllCampaigns'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'findByCampaignId'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'updateCampaign'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'getAllCampaignDrafts'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'findByCampaignDraftId'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'createCampaignDraft'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'updateCampaignDraft'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'getDetailContentCampaignDraft'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'getSchedule'));
+        $this->assertTrue(method_exists(app('Mailjet'), 'scheduleCampaign'));
     }
 
     public function testCanUseClient()
     {
-        $client = \Mailjet::getClient();
+        $client = Urchihe\LaravelMailjet\Facades\Mailjet::getClient();
         $this->assertEquals("Mailjet\Client", get_class($client));
     }
 
@@ -58,6 +65,6 @@ class MailjetServiceTest extends TestCase
 
     protected function getPackageProviders($app)
     {
-        return ['\Mailjet\LaravelMailjet\MailjetServiceProvider'];
+        return ['\Urchihe\LaravelMailjet\MailjetServiceProvider'];
     }
 }

@@ -18,8 +18,8 @@
         <env name="MAILJET_FROMEMAIL" value="from@mailjet.com"/>
         <env name="MAILJET_FROMNAME" value="mailjet"/>
         <env name="MAILJET_TOEMAIL" value="to@mailjet.com"/>
-        <env name="MAILJET_APIKEY" value="3872fa959faa1973e74ff2b782caf6a3"/>
-        <env name="MAILJET_APISECRET" value="e2ab301cef92dda02147d08048e94c29"/>
+        <env name="MAILJET_APIKEY" value="ABC123456"/>
+        <env name="MAILJET_APISECRET" value="ABC123456"/>
     </php>
 
 </phpunit>
